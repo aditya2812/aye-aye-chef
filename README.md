@@ -99,11 +99,17 @@ Visit **[https://aye-aye-chef.netlify.app](https://aye-aye-chef.netlify.app)** o
 
 ## 🏗️ **Architecture**
 
-### **System Flow Diagram**
+### **Complete User Flow**
+
+![Aye-Aye Chef Complete User Flow](docs/aye-aye-chef-complete-user-flow.png)
+
+*Complete user flow from photo capture to recipe generation, showing all steps, AWS services, and AI components working together.*
+
+### **System Architecture**
 
 ![Aye-Aye Chef Architecture](docs/architecture-flow-diagram.png)
 
-*Complete user flow from photo capture to recipe generation, showing all AWS services and AI components working together.*
+*Technical architecture diagram showing the serverless infrastructure and AI processing pipeline.*
 
 Aye-Aye Chef is built on a modern, scalable architecture:
 
