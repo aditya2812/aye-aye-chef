@@ -220,24 +220,6 @@ aye-aye-chef/
 
 ---
 
-## 🤝 **Contributing**
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
-
----
-
-## 📄 **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🆘 **Support**
-
-- 📧 **Email**: support@ayeayechef.com
-- 🐛 **Issues**: [GitHub Issues](https://github.com/aditya2812/aye-aye-chef/issues)
-- 📖 **Documentation**: [docs/](docs/)
-
 ---
 
 ## 🎉 **Try It Now!**
