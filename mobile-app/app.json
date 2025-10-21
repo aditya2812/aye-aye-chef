@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Aye Aye Chef",
+    "slug": "aye-aye",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ayeaye.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs access to camera to scan food ingredients.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to photo library to select food images."
+      }
+    },
+    "android": {
+      "package": "com.ayeaye.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-dev-client",
+      "expo-camera",
+      "expo-image-picker"
+    ],
+    "developmentClient": {
+      "silentLaunch": true
+    },
+    "extra": {
+      "apiUrl": "https://c4qdpmgqqd.execute-api.us-west-2.amazonaws.com/prod",
+      "awsRegion": "us-west-2",
+      "userPoolId": "us-west-2_oSS6Vmdc3",
+      "userPoolClientId": "499sieve1uu1duj11r1hjj2jt6",
+      "imagesBucket": "aye-aye-images-709716141648-1760504243023"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+[build]
+  publish = "dist"
+  command = "expo export --platform web"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[dev]
+  command = "npx expo start --web"
+  port = 19006
