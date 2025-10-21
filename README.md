@@ -279,13 +279,11 @@ npm install
 npm run web
 ```
 
-**For detailed instructions, see [QUICK_DEPLOY.md](QUICK_DEPLOY.md)**
+**For detailed instructions, see [SETUP.md](SETUP.md)**
 
 ### 🔗 **Repository URL for Judging**
 
-**GitHub Repository**: `https://github.com/aditya2812/aye-aye-chef`
-
-*(Replace `aditya2812` with actual GitHub username)*
+**GitHub Repository**: https://github.com/aditya2812/aye-aye-chef
 
 ---
 
