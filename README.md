@@ -250,43 +250,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📦 **Public Repository**
-
-This repository contains the complete source code for Aye-Aye Chef, including:
-
-- ✅ **Complete source code** for frontend and backend
-- ✅ **Infrastructure as Code** using AWS CDK
-- ✅ **Comprehensive documentation** and setup guides
-- ✅ **Deployment scripts** for easy testing
-- ✅ **Live demo** for immediate testing
-
-### 🚀 **Quick Deploy & Test**
-
-```bash
-# 1. Clone repository
-git clone https://github.com/aditya2812/aye-aye-chef.git
-cd aye-aye-chef
-
-# 2. Deploy backend (requires AWS account)
-npm install
-npm run deploy
-
-# 3. Configure and run frontend
-cd mobile-app
-cp .env.example .env
-# Update .env with your AWS outputs
-npm install
-npm run web
-```
-
-**For detailed instructions, see [SETUP.md](SETUP.md)**
-
-### 🔗 **Repository URL for Judging**
-
-**GitHub Repository**: https://github.com/aditya2812/aye-aye-chef
-
----
-
 <div align="center">
 
 **Made with ❤️ and 🤖 AI using [Kiro IDE](https://kiro.ai)**
