@@ -3,7 +3,7 @@ import Constants from 'expo-constants';
 // API Configuration
 export const API_CONFIG = {
   BASE_URL: Constants.expoConfig?.extra?.apiUrl || process.env.EXPO_PUBLIC_API_URL,
-  TIMEOUT: 30000,
+  TIMEOUT: 60000, // Increased to 60 seconds for AI recipe generation
 };
 
 // AWS Configuration

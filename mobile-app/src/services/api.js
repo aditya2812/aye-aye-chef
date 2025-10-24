@@ -21,10 +21,15 @@ class ApiService {
     try {
       const url = `${this.baseURL}${endpoint}`;
       const headers = await this.getAuthHeaders();
+      
+      // Create AbortController for proper timeout handling
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), this.timeout);
+      
       const config = {
         method: 'GET',
         headers,
-        timeout: this.timeout,
+        signal: controller.signal,
         mode: 'cors',
         credentials: 'omit',
         ...options,
@@ -45,6 +50,9 @@ class ApiService {
       });
 
       const response = await fetch(url, config);
+      
+      // Clear timeout on successful response
+      clearTimeout(timeoutId);
       
       console.log('📥 API Response:', {
         status: response.status,
@@ -67,6 +75,14 @@ class ApiService {
       
       return { success: true, data };
     } catch (error) {
+      // Handle AbortError specifically
+      if (error.name === 'AbortError') {
+        console.error('🚨 API Request Timeout:', {
+          timeout: this.timeout,
+          url: `${this.baseURL}${endpoint}`
+        });
+        return { success: false, error: `Request timed out after ${this.timeout/1000} seconds` };
+      }
       console.error('🚨 API Call Failed:', {
         error: error.message,
         stack: error.stack,
